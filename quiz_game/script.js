@@ -81,6 +81,7 @@ restartButton.addEventListener("click",restartQuiz)
 
 function startQuiz(){
     currentQuestionIndex=0;
+    score=0;
     scoreSpan.textContent=0;
 
     startScreen.classList.remove("active");
@@ -106,7 +107,7 @@ function showQuestion(){
     // to clear previous option
     answersContainer.innerHTML = "";
 
-    currentQuestion.answers.forEach(answer => {
+    currentQuestion.answers.forEach((answer) => {
         const button = document.createElement("button");
         button.textContent = answer.text;
         button.classList.add("answer-btn");
@@ -116,7 +117,7 @@ function showQuestion(){
 
         button.addEventListener("click",selectAnswer);
 
-        answersContainer.appendChild(button)
+        answersContainer.appendChild(button);
     })
 
 
@@ -135,7 +136,7 @@ function selectAnswer(event){
         if(button.dataset.correct === "true"){
             button.classList.add("correct");
         }
-        else if(button == selectedButton){
+        else if(button === selectedButton){
             button.classList.add("incorrect");
         }
     });
@@ -152,7 +153,8 @@ function selectAnswer(event){
         else{
             showResult();
         }
-    })
+    },1000
+)
 
 }
 
