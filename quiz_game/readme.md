@@ -26,10 +26,11 @@ Users can answer multiple-choice questions, get instant feedback (correct/incorr
 
 ---
 ## 📸 Screenshots
-![Quiz Start](assets/phot1.png)
-![Question Example](assets/photo2.png)
-![Result Page](assets/photo3.png)
+![Quiz Start](assets/phot1.png).
+![Question Example](assets/photo2.png).
+![Result Page](assets/photo3.png).
 
+---
 ## 🛠️ Tech Stack
 
     HTML5
@@ -38,9 +39,12 @@ Users can answer multiple-choice questions, get instant feedback (correct/incorr
 
     JavaScript (ES6)
 
+---
+
 ## 🤝 Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
+---
 
 ## 📄 License
 
